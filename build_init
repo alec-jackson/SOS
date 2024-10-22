@@ -1,0 +1,11 @@
+#! /bin/bash
+
+GIT_ROOT='git rev-parse --show-cdup'
+TEMPLATECONF="$(realpath ${GIT_ROOT} 2>/dev/null || realpath ."/sources/meta-sos/conf/templates/default")"
+
+if [ -n "'git submodule status'" ]; then
+	echo "Loading submodule repos..."
+	git submodule update --init --recursive
+fi
+
+. sources/poky/oe-init-build-env
