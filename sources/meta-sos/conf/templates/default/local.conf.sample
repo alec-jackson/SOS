@@ -55,7 +55,7 @@ MACHINE ??= "qemux86-64"
 #
 # The default is a downloads directory under TOPDIR which is the build directory.
 #
-#DL_DIR ?= "${TOPDIR}/downloads"
+DL_DIR ?= "/work/downloads"
 
 #
 # Where to place shared-state files
@@ -71,7 +71,7 @@ MACHINE ??= "qemux86-64"
 #
 # The default is a sstate-cache directory under TOPDIR.
 #
-#SSTATE_DIR ?= "${TOPDIR}/sstate-cache"
+SSTATE_DIR ?= "/work/sstate-cache"
 
 #
 # Where to place the build output
@@ -93,7 +93,7 @@ MACHINE ??= "qemux86-64"
 # Ultimately when creating custom policy, people will likely end up subclassing 
 # these defaults.
 #
-DISTRO ?= "poky"
+DISTRO ?= "sos"
 # As an example of a subclass there is a "bleeding" edge policy configuration
 # where many versions are set to the absolute latest code from the upstream 
 # source control systems. This is just mentioned here as an example, its not
