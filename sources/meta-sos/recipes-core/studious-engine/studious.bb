@@ -10,7 +10,9 @@ DEPENDS = " glew libsdl2 libsdl2-mixer libsdl2-image freetype glm"
 SRC_URI = "git://github.com/alec-jackson/studious-engine.git;protocol=https;branch=main"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=4a35305fb2fe33b15b6671499cc1c8b5"
 
-SRCREV = "4edc9fb94aa5cbf5affd73e8049370ca01b61e5c"
+SRCREV = "d75ec385c27764af58a5881f177cc7873fd2fb37"
+
+PV = "1.0.0"
 
 S = "${WORKDIR}/git"
 
