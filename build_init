@@ -8,4 +8,4 @@ if [ -n "'git submodule status'" ]; then
 	git submodule update --init --recursive
 fi
 
-. sources/poky/oe-init-build-env
+. sources/openembedded-core/oe-init-build-env
