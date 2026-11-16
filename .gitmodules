@@ -19,3 +19,6 @@
 [submodule "sources/meta-imx"]
 	path = sources/meta-imx
 	url = https://github.com/nxp-imx/meta-imx.git
+[submodule "sources/meta-freescale"]
+	path = sources/meta-freescale
+	url = https://github.com/Freescale/meta-freescale.git

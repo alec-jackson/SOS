@@ -7,6 +7,8 @@ BBFILES ?= ""
 
 BBLAYERS ?= " \
   ##OEROOT##/../meta-raspberrypi \
+  ##OEROOT##/../meta-imx/meta-imx-bsp \
+  ##OEROOT##/../meta-freescale \
   ##OEROOT##/../meta-sos \
   ##OEROOT##/../meta-openembedded/meta-oe \
   ##OEROOT##/../openembedded-core/meta \
