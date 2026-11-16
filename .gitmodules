@@ -16,3 +16,6 @@
 [submodule "sources/meta-yocto"]
 	path = sources/meta-yocto
 	url = https://git.yoctoproject.org/meta-yocto
+[submodule "sources/meta-imx"]
+	path = sources/meta-imx
+	url = https://github.com/nxp-imx/meta-imx.git
