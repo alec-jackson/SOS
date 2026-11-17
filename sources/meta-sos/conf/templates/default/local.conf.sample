@@ -72,6 +72,7 @@ DL_DIR ?= "/work/downloads"
 # The default is a sstate-cache directory under TOPDIR.
 #
 SSTATE_DIR ?= "/work/sstate-cache"
+BB_HASHSERVE_DB_DIR = "${SSTATE_DIR}"
 
 #
 # Where to place the build output

@@ -8,9 +8,9 @@ LICENSE = "MIT"
 
 inherit core-image
 
-IMAGE_FEATURES += "splash package-management ssh-server-dropbear hwcodecs weston"
+IMAGE_FEATURES += "splash package-management ssh-server-dropbear hwcodecs "
 
-IMAGE_INSTALL:append = " studious "
+IMAGE_INSTALL:append = " studious-dev "
 
 IMAGE_ROOTFS_SIZE ?= "8192"
 IMAGE_ROOTFS_EXTRA_SPACE:append = "${@bb.utils.contains("DISTRO_FEATURES", "systemd", " + 4096", "", d)}"
